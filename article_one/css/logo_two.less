@@ -1,0 +1,119 @@
+@import url(m_resert.css);
+html{
+    font-size: 62.5%;
+}
+.full(@w,@h,@b){
+    width: @w;
+    height: @h;
+    background: @b;
+}
+.box(@ver){
+    display: -webkit-box;
+    -webkit-box-orient: @ver;
+}
+.whole{
+   .full(100%,100%,none);
+   .box(vertical);
+   section{
+       .full(100%,100%,0);
+       background-image:url(../img/into1.jpg);
+       background-size: 100% auto;
+       .head{
+           .full(100%,17rem,none);
+           dl{
+                padding-top: 3rem;
+                text-align: center;
+           }
+           dd{
+               font-size: 18px;
+               margin-top: 1.5rem;
+           }
+       }
+       .message_one{
+           .full(100%,4.5rem,0);
+           .box(horizontal);
+           h1{
+               .full(7.5rem,4.5rem,0);
+               img{
+                   margin-left: 3.5rem;
+                   margin-top: 1.9rem;
+               }
+           }
+           span{
+               -webkit-box-flex: 1;
+               display: block;
+               margin-right: 3rem;
+               border-bottom: 1px solid #ff7d1b;
+               input{
+                  .full(100%,2rem,0);
+                   margin-top: 2.2rem;
+                   outline: none;
+                   border: none;
+                   font-size: 16px;
+               }
+           }
+       }
+       .message_two{
+           .full(100%,4.5rem,0);
+           .box(horizontal);
+           h1{
+               .full(7.5rem,4.5rem,0);
+               img{
+                   margin-left: 3.5rem;
+                   margin-top: 1.9rem;
+               }
+           }
+           span{
+               display: block;
+               -webkit-box-flex: 1;
+               border-bottom: 1px solid #ff7d1b;
+               margin-right: 3rem;
+               position: relative;
+               input{
+                   margin-top: 2rem;
+                   outline: none;
+                   border: none;
+                   background: 0;
+                   .full(100%,2rem,0);
+                   font-size: 16px;
+               }
+               .photo{
+                   position: absolute;
+                   right: 0rem;
+                   top: 3rem;
+               }
+           }
+       }
+       .wai{
+           .full(100%,3.5rem,0);
+           margin-top: 3rem;
+           padding: 0rem 1.5rem;
+           box-sizing: border-box;
+           .logoin{
+               .full(100%,3.5rem,#ff7d1b);
+               border-radius: 5px;
+               text-align: center;
+               line-height: 3.5rem;
+               color: white;
+               font-size: 16px;
+           }
+       }
+       .beizhu{
+           .full(100%,4rem,0);
+           h1{
+               float: left;
+               margin-left: 1.5rem;
+               font-size: 16px;
+               line-height: 4rem;
+               color: #507daf;
+           }
+           h2{
+               float: right;
+               margin-right: 1.5rem;
+               font-size: 16px;
+               line-height: 4rem;
+               color: #507daf;
+           }
+       }
+   }
+}
